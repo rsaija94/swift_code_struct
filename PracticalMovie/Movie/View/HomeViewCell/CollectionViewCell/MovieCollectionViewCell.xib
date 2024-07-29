@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="PracticalMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uMZ-Zf-WEO">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="187"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="flj-Sb-SOX">
+                                <rect key="frame" x="0.0" y="0.0" width="196" height="140"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq9-Fe-NXd">
+                                <rect key="frame" x="0.0" y="140" width="196" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="flj-Sb-SOX" secondAttribute="trailing" id="3qd-GX-b9w"/>
+                            <constraint firstItem="Iq9-Fe-NXd" firstAttribute="leading" secondItem="uMZ-Zf-WEO" secondAttribute="leading" id="7Tb-sh-5yE"/>
+                            <constraint firstAttribute="bottom" secondItem="Iq9-Fe-NXd" secondAttribute="bottom" id="MF8-vC-T4e"/>
+                            <constraint firstAttribute="trailing" secondItem="Iq9-Fe-NXd" secondAttribute="trailing" id="RzR-IP-IsF"/>
+                            <constraint firstItem="Iq9-Fe-NXd" firstAttribute="top" secondItem="flj-Sb-SOX" secondAttribute="bottom" id="csY-kg-mPN"/>
+                            <constraint firstItem="flj-Sb-SOX" firstAttribute="leading" secondItem="uMZ-Zf-WEO" secondAttribute="leading" id="hGi-f1-IUS"/>
+                            <constraint firstItem="flj-Sb-SOX" firstAttribute="top" secondItem="uMZ-Zf-WEO" secondAttribute="top" id="tHj-AX-FTl"/>
+                            <constraint firstItem="Iq9-Fe-NXd" firstAttribute="top" secondItem="flj-Sb-SOX" secondAttribute="bottom" id="vpi-V5-Lud"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uMZ-Zf-WEO" secondAttribute="bottom" id="89E-1w-odu"/>
+                <constraint firstItem="uMZ-Zf-WEO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CJm-mL-na8"/>
+                <constraint firstItem="uMZ-Zf-WEO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UQQ-5k-7tv"/>
+                <constraint firstAttribute="trailing" secondItem="uMZ-Zf-WEO" secondAttribute="trailing" id="z8l-1e-ahu"/>
+            </constraints>
+            <size key="customSize" width="196" height="187"/>
+            <connections>
+                <outlet property="imageMovie" destination="flj-Sb-SOX" id="NXK-rA-rfH"/>
+                <outlet property="lbnNameMovie" destination="Iq9-Fe-NXd" id="MiO-eB-Esf"/>
+            </connections>
+            <point key="canvasLocation" x="250.38167938931298" y="67.957746478873247"/>
+        </collectionViewCell>
+    </objects>
+</document>
